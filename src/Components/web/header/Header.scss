@@ -1,0 +1,222 @@
+.header {
+    width: 100%;
+    // -webkit-box-shadow: 0px 5px 5px -5px $orange;
+    // -moz-box-shadow: 0px 5px 5px -5px $orange;
+    // box-shadow: 0px 5px 5px -5px $orange;
+    
+    @include media(1024) {
+        position: fixed;
+        width: 100%;top: 0;right: 0;left: 0;
+        margin: 0 auto;
+        z-index: 5;
+        // backdrop-filter:blur(10px);
+    }
+
+    &_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $size_20 $size_0;
+
+    }
+
+    &_page {
+        border: 5px double $orange;
+        border-radius: $size_5;
+        width: $size_65;
+        height: $size_65;
+        transition: 0.4s;
+        &:hover{
+            transform: scale(1.05);
+        }
+        &:active{
+            transform: scale(0.95);
+        }
+        
+        @include media(1024) {
+            display:none;
+        }
+    }
+
+    &_logo {
+        width: $wit_100;
+        height: $wit_100;
+        animation: anime 4s linear infinite;
+        
+        @keyframes anime {
+            0%{
+                transform: rotateY(0deg);
+            }
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+    }
+
+    &_list_group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: $size_100;
+        
+        @include media(1024) {
+            display:none;
+        }
+    }
+
+    &_item {
+        
+        transition: 0.4s;
+        
+        &:hover{
+            transform: scale(1.05);
+        }
+        &:active{
+            transform: scale(0.95);
+        }
+    }
+
+    &_link {
+        font-weight: 600;
+        font-size: 18px;
+        color: $jump;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        transition: 0.4s !important;
+        padding: $size_10 $size_20;
+
+        &.active {
+            color: $orange;
+        }
+    }
+
+    &-btn_group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_btn {
+        width: $size_40 !important;
+        height: $size_40 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: $rgba !important;
+        border: 2px solid $orange;
+        border-radius: $size_5 !important;
+        position: relative !important;
+        margin: $size_0 $size_5 !important;
+        overflow: hidden ;
+        transition: 0.4s !important;
+
+        &:nth-last-child(1) {
+            margin: $size_0 $size_0 $size_0 $size_5;
+        }
+        
+        
+    }
+
+    &_icon {
+        font-size: 22px !important;
+        color: $jump;
+        transition:0.4s !important;
+    }
+
+
+    &_night_icon {
+        position: absolute;
+        margin: auto;
+        opacity: 1;
+        
+        transform: translate(0px, 0px) rotateX(0deg);
+
+        &.day-night {
+            opacity: 0;
+            transform: translate(0, -50px) rotateX(90deg);
+            
+        }
+    }
+
+    &_day_icon {
+        position: absolute;
+        margin: auto;
+        opacity: 0;
+        transition: 0.4s !important;
+        transform: translate(0, 50px) rotateX(90deg);
+
+        &.day-night {
+            opacity: 1;
+            transform: translate(0, 0px) rotateX(0deg);
+            
+        }
+    }
+    &_lang_btn{
+        &:active{
+            transform: scale(0.85);
+        }
+    }
+
+}
+.nav{
+    width: 100%;
+    position: fixed;
+    bottom: 0;left: 0;
+    right: 0;
+    display: none;
+    align-items:center;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    
+    @include media(1024){
+        display: flex;
+    }
+    
+    &_list{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    &_item{
+        padding: 30px 44px;
+        transition: 0.4s;
+        &:hover{
+            transform: scale(1.10);
+        }
+        &:hover{
+            transform: scale(0.95);
+        }
+        
+        @include media(834) {
+            padding: 20px 35px;
+        }
+        @include media(600) {
+            padding: 15px 20px;
+        }
+        @include media(450) {
+            padding: 10px 15px;
+        }
+    }
+    &_link{
+        font-size: 60px;
+        color:#242D49;
+        transition: 0.4s ;
+        &.active{
+            color:orange;
+        }
+        @include media(834) {
+            font-size: 50px;
+        }
+        @include media(450) {
+            font-size: 40px;
+        }
+    }
+}

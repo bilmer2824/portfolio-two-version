@@ -1,0 +1,23 @@
+// root 
+@import "./Components/layout/root/Root.scss";
+@import "./Components/layout/root/Var.scss";
+@import "./Components/layout/root/Swipper.scss";
+@import "./Components/layout/root/Material.scss";
+
+
+// controls
+@import "./Components/layout/context/Controls.scss";
+@import "./Components/layout/error/Error.scss";
+
+// navigation
+@import "./Components/web/header/Header.scss";
+@import "./Components/web/nav/Nav.scss";
+@import "./Components/web/footer/Footer.scss";
+@import "./Components/web/lang/Language.scss";
+
+// pages
+@import "./Components/pages/about/About.scss";
+@import "./Components/pages/contact/Contact.scss";
+@import "./Components/pages/education/Education.scss" ;
+@import "./Components/pages/home/Home.scss";
+@import "./Components/pages/portfolio/portfolio.scss";

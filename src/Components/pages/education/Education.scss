@@ -1,0 +1,398 @@
+.education {
+    width: 100%;
+    
+    @include media(1024) {
+        margin-bottom: 150px;
+    }
+    @include media (1024) {
+        margin-top: 100px;
+    }
+
+    &_spanes {
+        color: orange;
+    }
+
+    &_main_title {
+        font-weight: 400;
+        font-size: 45px;
+        text-transform: capitalize;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #242D49;
+        margin-top: 20px;
+        
+        @include media(490) {
+            font-size: 35px;
+        }
+    }
+
+    &_top {
+        padding: 30px;
+    }
+
+    &_tt {
+        width: 70px;
+
+        @include media(820) {
+            width: 50px;
+        }
+
+        @include media(600) {
+            width: auto;
+        }
+    }
+
+    &_skills {
+        padding: 30px;
+    }
+
+    &_lang {
+        padding: 30px;
+    }
+
+    &_certificate {
+        padding: 30px;
+    }
+
+    &_videos {
+        padding: 30px;
+    }
+
+    &_title_gpa {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+
+    &_img {
+        height: 50px;
+        width: 50px;
+        filter: hue-rotate(210deg);
+    }
+
+    &_title {
+        font-weight: 400;
+        font-size: 25px;
+        color: #242D49;
+        text-transform: capitalize;
+        margin-left: 10px;
+        letter-spacing: 2px;
+
+        @include media(820) {
+            font-size: 32px;
+        }
+
+        @include media(600) {
+            margin-left: 16px;
+        }
+
+
+    }
+
+    &_skills_icon {
+        font-size: 40px;
+        color: orange;
+        filter: drop-shadow(8px 8px 4px #242D49) opacity(0.8);
+    }
+
+    &_text {
+        font-weight: 400;
+        font-size: 16px;
+        color: #242D49;
+        letter-spacing: 2px;
+        padding: 10px 30px;
+        border: 1px solid orange;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        line-height: 22px;
+        transition: 0.4s;
+
+        @include media(820) {
+            line-height: 28px;
+            font-size: 24px;
+        }
+
+        @include media(600) {
+            font-size: 13px;
+        }
+    }
+
+    &_skills_text_pp {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 230px;
+
+        @include media(1200) {
+            height: 300px;
+        }
+
+        @include media(820) {
+            height: auto;
+        }
+
+        @include media(600) {
+            height: auto;
+        }
+    }
+
+    &_front {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 10px;
+
+        @include media(820) {
+            width: 100%;
+        }
+
+        @include media(600) {
+            width: 100%;
+        }
+    }
+
+    &_skills_title {
+        font-weight: 600;
+        font-size: 20px;
+        color: orange;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+
+        @include media(600) {
+            font-size: 16px;
+
+            & span {
+                font-size: 14px;
+                text-transform: lowercase;
+
+            }
+        }
+    }
+
+    &_basic_span {
+        font-weight: 400;
+        color: #242D49;
+        font-size: 18px;
+        text-transform: lowercase;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    &_skills_text {
+        font-weight: 500;
+        font-size: 16px;
+        color: #242D49;
+        margin-top: 10px;
+        letter-spacing: 1px;
+
+        @include media(600) {
+            font-size: 14px;
+        }
+    }
+
+    &_language {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 70px;
+
+        @include media(1400) {
+            height: 140px;
+        }
+
+        @include media(820) {
+            height: auto;
+        }
+
+        @include media(600) {
+            height: auto;
+        }
+    }
+
+    &_range {
+        width: 300px;
+        height: 10px;
+        border-radius: 5px;
+        background: #ededed !important;
+        margin-top: 15px;
+        overflow: hidden;
+
+        @include media(820) {
+            width: 100%;
+        }
+
+        @include media(600) {
+            width: 100%;
+        }
+    }
+
+    &_range_bacic {
+        height: 100%;
+        background: orange;
+        border-radius: 5px;
+    }
+
+    &_certificate_logo {
+        width: 100%;
+        height: 100%;
+        
+
+        @include media(600) {
+            // width: 300px;
+            // height: 150px;
+        }
+    }
+
+    &_logo_pages_bg {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+
+        @include media(820) {
+            justify-content: center;
+        }
+    }
+
+    &_youTube {
+        width: 100%;
+        height: 100%;
+    }
+
+    &_div_zba {
+        width: 100%;
+        height: 100%;
+        border: 2px solid orange;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    &_certificate_img{
+        position: relative;
+        border-radius: 25px;
+        border: 3px solid orange;
+        overflow: hidden;
+        width: 500px;
+        height: 290px;
+        
+        &:hover{
+            .education_full_screen_icon{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &_full_screen_icon{
+        font-size: 25px;
+        position:absolute;
+        bottom: 10px;
+        right: 15px;
+        color:#000;
+        z-index: +5;
+        transition: 0.4s;
+        
+        &:active{
+            transform: scale(0.95) !important;
+        }
+    }
+}
+
+.ratio {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    & iframe {
+        border: none !important;
+        // border-radius:10px;
+    }
+
+    @include media(600) {
+        height: 150px;
+    }
+}
+.cvg_1 {
+    width: 100%;
+}
+
+.cvg_2 {
+    width: 100%;
+}
+
+.cvg_3 {
+    width: 50%;
+}
+
+.cvg_4 {
+    width: 70%;
+}
+
+.full{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 50px 100px;
+    background:rgba(0,0,0,0.5466561624649859);
+    display: none;
+    z-index: +10;
+    
+    &.full_open{
+        display: flex;
+        @include media (1024) {
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
+    }
+    
+    &_top{
+        width: 100%;
+        height: 100%;
+        @include media (1500) {
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
+    }
+    &_img{
+        width: 100%;
+        height: 100%;
+        
+        @include media (1024) {
+            width: 100%;
+            height:auto;
+        }
+    }
+    &_icon{
+        position:absolute;
+        top: 2%;
+        right: 2%;
+        font-size: 30px;
+        color:#FFF;
+        transition: 0.4s;
+        
+        &:active{
+            transform: scale(0.95);
+        }
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+}

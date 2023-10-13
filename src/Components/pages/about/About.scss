@@ -1,0 +1,406 @@
+.about {
+    width: 100%;
+    height: 100%;
+    
+    @include media (1024) {
+        margin-top: 100px;
+    }
+    
+
+    &_title {
+        font-weight: 400;
+        font-size: 55px;
+        color: orange;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+
+        & span {
+            color: #242D49;
+        }
+    }
+    &_main_title {
+        font-weight: 400;
+        font-size: 45px;
+        text-transform: capitalize;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #242D49;
+        margin-top: 20px;
+    }
+
+    &_top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 60px;
+        border-radius: 5px;
+
+        @include media(1200) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include media(820) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include media(600) {
+            flex-direction: column;
+        }
+
+    }
+
+    &_logo_page {
+        width: 380px;
+        height: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid orange;
+        border-radius: 25%;
+        overflow: hidden;
+        transition: 0.4s;
+        @include media(1500) {
+            margin: 0 0 30px;
+            width: 320px;
+            height: 320px;
+        }
+        @include media(1400) {
+            margin: 0 0 30px;
+            width: 280px;
+            height: 280px;
+        }
+
+        @include media(600) {
+            width: 280px;
+            height: 280px;
+
+        }
+    }
+
+    &_logo_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &_icon {
+        font-size: 236px;
+        color: #242D49;
+    }
+
+    &_title_gpa {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0 30px;
+
+        @include media(1400) {
+            padding: 0 !important;
+            margin-left: 10px;
+        }
+
+        @include media(600) {
+            padding: 0;
+        }
+    }
+
+    &_lesson {
+        width: 290px;
+        height: 2px;
+        background: orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        transition: 0.4s;
+
+        @include media(820) {
+            display: none;
+        }
+    }
+
+    &_bg_title {
+        font-weight: 400;
+        font-size: 25px;
+        color: orange;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        @include media(820) {
+            margin: 0 auto;
+
+            & span {
+                display: none;
+            }
+        }
+
+        @include media(600) {
+            font-size: 30px;
+
+            & span {
+                width: 0;
+                height: 0;
+                display: none;
+                text-align: center;
+            }
+        }
+    }
+
+    &_list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 236px;
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 15px;
+
+        @include media(820) {
+            height: auto;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: auto;
+        }
+
+        @include media(600) {
+            height: auto;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: auto;
+        }
+    }
+
+    &_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+        @include media(1400) {
+            padding:15px 0;
+        }
+
+        @include media(600) {
+            padding: 15px 0;
+            justify-content: space-between;
+
+            & p {
+                font-size: 13px;
+            }
+
+            & span {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &_item_p {
+        font-weight: 400;
+        font-size: 18px;
+        color: #242D49;
+        width: 150px;
+        letter-spacing: 2px;
+        transition: 0.4s;
+        
+        @include media(1340) {
+            width: 130px;
+        }
+        @include media(1240) {
+            width: 100px;
+        }
+
+        @include media(820) {
+            width: 150px;
+        }
+
+        @include media(600) {
+            // width: 150px;
+        }
+    }
+
+    &_item_span {
+        font-weight: 400;
+        font-size: 18px;
+        color: orange;
+        width: 300px;
+        letter-spacing: 2px;
+        transition: 0.4s;
+
+        @include media(1200) {
+            width: 255px;
+        }
+
+        @include media(600) {
+            width: auto;
+        }
+        @include media(450) {
+            font-size: 10px;
+        }
+    }
+
+    &_button {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 10px 20px !important;
+        color: #fff !important;
+        background: orange;
+        border: none !important;
+        font-size: 18px !important;
+        text-transform: capitalize !important;
+        letter-spacing: 3px !important;
+        border-radius: 5px !important;
+        transition: 0.2s !important;
+        
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 5px 0px rgba(255, 165, 0, 0.3214460784313726);
+        }
+
+        &:active {
+            transform: scale(0.95);
+
+            box-shadow: 0px 5px 5px 0px rgba(255, 165, 0, 0.5214460784313726);
+        }
+    }
+
+    &_btn_icon {
+        font-size: 24px;
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    &_link_ss {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 800px;
+        margin-top: 40px;
+
+        @include media(820) {
+            width: 100%;
+            justify-content: center;
+        }
+
+        @include media(600) {
+            width: 100%;
+        }
+
+    }
+
+    &_mire_link {
+        font-weight: 400;
+        font-size: 24px;
+        color: orange;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        transition: 0.4s;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 10px;
+
+        @include media(600) {
+            font-size: 18px;
+        }
+    }
+    &_email_href{
+        text-decoration: underline !important;
+        transition: 0.4s;
+    }
+
+}
+.aboutUsing {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+    @include media(1024) {
+        margin-bottom: 150px;
+    }
+    &_button {
+        width: 80% !important;
+        padding: 10px 30px !important;
+        background: rgba(0, 0, 0, 0) !important;
+        backdrop-filter: blur(10px) !important;
+        border-radius: 5px !important;
+        border: 3px solid orange;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        flex-direction: column !important;
+        height: 56px ;
+        position: relative !important;
+        margin: 0 auto !important;
+        overflow: hidden !important;
+        transition: 0.4s !important;
+
+        &.active {
+            height: 150px ;
+
+            .aboutUsing_text {
+                opacity: 1;
+            }
+
+            .aboutUsing_icon {
+                transform: rotate(90deg);
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        @include media(820) {
+
+            &.active {
+                height: 255px !important;
+            }
+        }
+
+        @include media(600) {
+            height: auto;
+            overflow: scroll;
+
+            .aboutUsing_icon {
+                display: none;
+            }
+
+            .aboutUsing_text {
+                opacity: 1;
+            }
+
+            &.active {
+                height: auto;
+            }
+        }
+    }
+
+    &_icon {
+        position: absolute;
+        right: 10px;
+        font-size: 30px;
+        transition: 0.4s;
+    }
+    &_text {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #242D49;
+        letter-spacing: 2px;
+        opacity: 0;
+        transition: 0.4s;
+    }
+
+}
